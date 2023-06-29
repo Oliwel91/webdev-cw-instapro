@@ -49,8 +49,7 @@ export function renderAuthPageComponent({ appEl, setUser }) {
                
               </div>
           </div>
-      </div>    
-`;
+      </div>`;
 
     appEl.innerHTML = appHtml;
 

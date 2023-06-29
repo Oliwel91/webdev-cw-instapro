@@ -1,7 +1,3 @@
-/* 
-  Это стили Дизайн системы, сквозные стили для элементов интерфейса
-  всего приложения: шрифты, кнопки, инпуты и так далее
-*/
 
 @font-face {
   font-family: "StratosSkyeng";
@@ -159,4 +155,45 @@ strong {
     top: 24px;
     height: 32px;
   }
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(2);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.like-button {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.post-image-container {
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #545666;
 }
